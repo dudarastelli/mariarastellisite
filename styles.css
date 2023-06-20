@@ -3,12 +3,18 @@
 :root {
     --cor-de-fundo: #7A04B1;
     --roxo: #BA8DCF;
+    --branco: #FFFFFF;
+    --fonte_principal: "Roboto"
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte_principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
-h1 {
-    background-color: roxo;
-}

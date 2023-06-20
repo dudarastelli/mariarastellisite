@@ -17,13 +17,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container {
     display: flex;
     align-items: center;
+    
 }
 
 .container_imagem {
     padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 50vw;
+
+}
+
+.container--botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu-titulo, .lista-menu-item {
+    padding: 1em;
+    background-color: var(--branco);
+
+}
+
+.lista-menu-titulo {
+    color: var(--cor-de-fundo);
+}
+
+.lista_menu-link {
+    background: var(--roxo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+} 
+
+.lista-menu-titulo {
+    font-weight: 700;
+}
+
+.container--botao {
+    display: none;
 }
